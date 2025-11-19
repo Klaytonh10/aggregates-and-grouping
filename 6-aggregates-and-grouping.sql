@@ -1,2 +1,4 @@
 use northwind;
-select ProductName, SupplierID from products;
+select SupplierID, count(*)
+from products
+group by SupplierId;
